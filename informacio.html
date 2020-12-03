@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <script src="../menu.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bowser/1.9.4/bowser.min.js"></script>
+</head>
+<body>
+<script>
+    document.write("Nombre del navegador: " + bowser.name);
+    document.write("<br>");
+    document.write("Versión del navegador: " + bowser.version);
+    document.write("<br>");
+    document.write("Sistema Operatiu: " + detectOS());
+    document.write("<br>");
+    document.write("Idioma: " + window.navigator.language);
+    document.write("<br>");
+    document.write("URL: " + window.location);
+    function detectOS() {
+        const platform = navigator.platform.toLowerCase(),
+            iosPlatforms = ['iphone', 'ipad', 'ipod', 'ipod touch'];
+
+        if (platform.includes('mac')) return 'MacOS';
+        if (iosPlatforms.includes(platform)) return 'iOS';
+        if (platform.includes('win')) return 'Windows';
+        if (/android/.test(navigator.userAgent.toLowerCase())) return 'Android';
+        if (/linux/.test(platform)) return 'Linux';
+
+        return 'unknown';
+    }
+</script>
+</body>
+</html>
