@@ -25,9 +25,26 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="19479cab-d06c-4893-ac65-abd80991f40d" name="Default Changelist" comment="Afegim el fitxer que inclou els credits">
-      <change afterPath="$PROJECT_DIR$/js/map.js" afterDir="false" />
+    <list default="true" id="19479cab-d06c-4893-ac65-abd80991f40d" name="Default Changelist" comment="Declarem la classe Map">
+      <change afterPath="$PROJECT_DIR$/img/comecocos.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/roca.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/game.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/gameobject.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/rock.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/sketch.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/map.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/p5/README.txt" beforeDir="false" afterPath="$PROJECT_DIR$/js/p5/README.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/p5/addons/p5.sound.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/p5/addons/p5.sound.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/p5/addons/p5.sound.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/p5/addons/p5.sound.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/p5/empty-example/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/p5/empty-example/sketch.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/p5/p5-test.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/p5/p5-test.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/p5/p5.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/p5/p5.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/p5/p5.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/p5/p5.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/p5/p5.pre-min.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/p5/p5.pre-min.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,11 +79,30 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/img" />
     <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/js" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/img" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="index.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/comecocos/index.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JavaScript Debug.index.html" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -80,7 +116,8 @@
       <workItem from="1607012774733" duration="1158000" />
       <workItem from="1607096877577" duration="22000" />
       <workItem from="1607615553954" duration="1205000" />
-      <workItem from="1607616816447" duration="356000" />
+      <workItem from="1607616816447" duration="1779000" />
+      <workItem from="1608214291936" duration="6231000" />
     </task>
     <task id="LOCAL-00001" summary="Afegim la part de la informació del sistema">
       <created>1607012819880</created>
@@ -96,7 +133,14 @@
       <option name="project" value="LOCAL" />
       <updated>1607013460343</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Declarem la classe Map">
+      <created>1607617187148</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1607617187148</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -127,9 +171,11 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Afegim la part de la informació del sistema" />
     <MESSAGE value="Afegim el fitxer que inclou els credits" />
-    <option name="LAST_COMMIT_MESSAGE" value="Afegim el fitxer que inclou els credits" />
+    <MESSAGE value="Declarem la classe Map" />
+    <option name="LAST_COMMIT_MESSAGE" value="Declarem la classe Map" />
   </component>
   <component name="WindowStateProjectService">
     <state x="638" y="176" width="700" height="752" key="#PHP" timestamp="1607011083232">
@@ -140,6 +186,10 @@
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
     <state x="451" y="210" key="#com.intellij.execution.impl.EditConfigurationsDialog/67.27.1853.1053@67.27.1853.1053" timestamp="1607011682086" />
+    <state x="726" y="301" width="524" height="502" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1608220470702">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state x="726" y="301" width="524" height="502" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/67.27.1853.1053@67.27.1853.1053" timestamp="1608220470702" />
     <state x="765" y="296" width="447" height="513" key="FileChooserDialogImpl" timestamp="1607096899802">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
