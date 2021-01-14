@@ -1,12 +1,11 @@
 class Rock extends Gameobject {
 
-    constructor() {
-        super();
+    constructor(x,y) {
+        super(x,y);
     }
 
-    show (){
-        img = loadImage('assets/laDefense.jpg');
-        image(img, 0, 0);
+    show(){
+        image(imgRoca, this.coordX,this.coordY);
     }
 
 }
