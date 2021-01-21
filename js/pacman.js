@@ -1,5 +1,11 @@
 class Pacman extends Gameobject {
 
+    MAX_LEFT = 0;
+    MAX_RIGHT = game.sizeImg*game.gameCol;
+    MAX_UP = 0;
+    MAX_DOWN = game.sizeImg*game.gameRows;
+
+
     constructor(x,y) {
         super(x,y);
         this.vides = 3;
@@ -22,27 +28,34 @@ class Pacman extends Gameobject {
         p.image(image, this.coordX,this.coordY);
     }
     moveUpper(){
-        this.coordY = this.coordY - game.sizeImg;
+        let size = game.sizeImg;
+        if((this.coordY-size)>=this.MAX_UP){
+            this.coordY = this.coordY - game.sizeImg;
+        }
         this.direction = 1;
-        this.show(imgPacUp);
     }
 
     moveDown(){
-        this.coordY = this.coordY + game.sizeImg;
+        let size = game.sizeImg;
+        if((this.coordY+size)<this.MAX_DOWN) {
+            this.coordY = this.coordY + game.sizeImg;
+        }
         this.direction = 2;
-        this.show(imgPacDown);
     }
 
     moveLeft(){
-        this.coordX = this.coordX - game.sizeImg;
+        let size = game.sizeImg;
+        if((this.coordX-size)>=this.MAX_LEFT){
+            this.coordX = this.coordX - game.sizeImg;
+        }
         this.direction = 3;
-        this.show(imgPacLeft);
     }
 
     moveRight(){
-        this.coordX = this.coordX + game.sizeImg;
+        let size = game.sizeImg;
+        if((this.coordX+size)<this.MAX_RIGHT){
+            this.coordX = this.coordX + game.sizeImg;
+        }
         this.direction = 4;
-        image(imgPacRight, this.coordX,this.coordY);
-        this.show(imgPacRight);
     }
 }
