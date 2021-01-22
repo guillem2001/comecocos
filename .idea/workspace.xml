@@ -1,7 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="BRANCH:dev" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </select>
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="19479cab-d06c-4893-ac65-abd80991f40d" name="Default Changelist" comment="" />
+    <list default="true" id="19479cab-d06c-4893-ac65-abd80991f40d" name="Default Changelist" comment="afegim el pacman per a que es pugui moure per el mapa">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/pacman.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/pacman.js" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -18,17 +45,60 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <favorite-branches>
+      <branch-storage>
+        <map>
+          <entry type="LOCAL">
+            <value>
+              <list>
+                <branch-info repo="$PROJECT_DIR$" source="dev" />
+              </list>
+            </value>
+          </entry>
+        </map>
+      </branch-storage>
+    </favorite-branches>
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1l9Z4Dn47HHqOo892Ex1IaOkZxk" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/js" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/img" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="index.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/comecocos/index.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JavaScript Debug.index.html" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -38,17 +108,123 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1607011073956</updated>
-      <workItem from="1607011074985" duration="456000" />
+      <workItem from="1607011074985" duration="1469000" />
+      <workItem from="1607012774733" duration="1158000" />
+      <workItem from="1607096877577" duration="22000" />
+      <workItem from="1607615553954" duration="1205000" />
+      <workItem from="1607616816447" duration="1779000" />
+      <workItem from="1608214291936" duration="7157000" />
+      <workItem from="1610638177067" duration="4009000" />
+      <workItem from="1610642232232" duration="482000" />
+      <workItem from="1611065260104" duration="632000" />
+      <workItem from="1611237965153" duration="6397000" />
     </task>
+    <task id="LOCAL-00001" summary="Afegim la part de la informació del sistema">
+      <created>1607012819880</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1607012819880</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Afegim el fitxer que inclou els credits">
+      <created>1607013460343</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1607013460343</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Declarem la classe Map">
+      <created>1607617187148</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1607617187148</updated>
+    </task>
+    <task id="LOCAL-00004" summary="afegim classes game,gameobject,rock, eliminem arxius obsolets, movem de carpeta p5, afegim imatge roca">
+      <created>1608222685361</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1608222685362</updated>
+    </task>
+    <task id="LOCAL-00005" summary="creem la funcio per mostrar les roques en funcio del mapa">
+      <created>1610641949724</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1610641949724</updated>
+    </task>
+    <task id="LOCAL-00006" summary="afegim el pacman per a que es pugui moure per el mapa">
+      <created>1611245049577</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1611245049577</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="dev" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="Afegim la part de la informació del sistema" />
+    <MESSAGE value="Afegim el fitxer que inclou els credits" />
+    <MESSAGE value="Declarem la classe Map" />
+    <MESSAGE value="afegim classes game,gameobject,rock, eliminem arxius obsolets, movem de carpeta p5, afegim imatge roca" />
+    <MESSAGE value="creem la funcio per mostrar les roques en funcio del mapa" />
+    <MESSAGE value="afegim el pacman per a que es pugui moure per el mapa" />
+    <option name="LAST_COMMIT_MESSAGE" value="afegim el pacman per a que es pugui moure per el mapa" />
   </component>
   <component name="WindowStateProjectService">
     <state x="638" y="176" width="700" height="752" key="#PHP" timestamp="1607011083232">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
     <state x="638" y="176" width="700" height="752" key="#PHP/67.27.1853.1053@67.27.1853.1053" timestamp="1607011083232" />
+    <state x="451" y="210" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1607011682086">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state x="451" y="210" key="#com.intellij.execution.impl.EditConfigurationsDialog/67.27.1853.1053@67.27.1853.1053" timestamp="1607011682086" />
+    <state x="726" y="301" width="524" height="502" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1608220470702">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state x="726" y="301" width="524" height="502" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/67.27.1853.1053@67.27.1853.1053" timestamp="1608220470702" />
+    <state x="765" y="296" width="447" height="513" key="FileChooserDialogImpl" timestamp="1611065963346">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state x="765" y="296" width="447" height="513" key="FileChooserDialogImpl/67.27.1853.1053@67.27.1853.1053" timestamp="1611065963346" />
+    <state x="588" y="288" width="800" height="528" key="Vcs.Push.Dialog.v2" timestamp="1610642032590">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state x="588" y="288" width="800" height="528" key="Vcs.Push.Dialog.v2/67.27.1853.1053@67.27.1853.1053" timestamp="1610642032590" />
+    <state x="656" y="257" width="672" height="678" key="search.everywhere.popup" timestamp="1611243513034">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state x="656" y="257" width="672" height="678" key="search.everywhere.popup/67.27.1853.1053@67.27.1853.1053" timestamp="1611243513034" />
   </component>
 </project>
