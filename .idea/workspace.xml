@@ -25,9 +25,13 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="19479cab-d06c-4893-ac65-abd80991f40d" name="Default Changelist" comment="afegim el pacman per a que es pugui moure per el mapa">
+    <list default="true" id="19479cab-d06c-4893-ac65-abd80991f40d" name="Default Changelist" comment="FEM EL CODI PER A QUE EL PACMAN NO PUGUI SORTIR DEL MAPA">
+      <change afterPath="$PROJECT_DIR$/img/food.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/food.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/pacman.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/pacman.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/game.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/game.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/sketch.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/sketch.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -117,7 +121,9 @@
       <workItem from="1610638177067" duration="4009000" />
       <workItem from="1610642232232" duration="482000" />
       <workItem from="1611065260104" duration="632000" />
-      <workItem from="1611237965153" duration="6397000" />
+      <workItem from="1611237965153" duration="6843000" />
+      <workItem from="1611331424533" duration="4000" />
+      <workItem from="1611761876910" duration="464000" />
     </task>
     <task id="LOCAL-00001" summary="Afegim la part de la informació del sistema">
       <created>1607012819880</created>
@@ -161,7 +167,14 @@
       <option name="project" value="LOCAL" />
       <updated>1611245049577</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="FEM EL CODI PER A QUE EL PACMAN NO PUGUI SORTIR DEL MAPA">
+      <created>1611247147965</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1611247147965</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -199,7 +212,8 @@
     <MESSAGE value="afegim classes game,gameobject,rock, eliminem arxius obsolets, movem de carpeta p5, afegim imatge roca" />
     <MESSAGE value="creem la funcio per mostrar les roques en funcio del mapa" />
     <MESSAGE value="afegim el pacman per a que es pugui moure per el mapa" />
-    <option name="LAST_COMMIT_MESSAGE" value="afegim el pacman per a que es pugui moure per el mapa" />
+    <MESSAGE value="FEM EL CODI PER A QUE EL PACMAN NO PUGUI SORTIR DEL MAPA" />
+    <option name="LAST_COMMIT_MESSAGE" value="FEM EL CODI PER A QUE EL PACMAN NO PUGUI SORTIR DEL MAPA" />
   </component>
   <component name="WindowStateProjectService">
     <state x="638" y="176" width="700" height="752" key="#PHP" timestamp="1607011083232">

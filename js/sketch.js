@@ -3,13 +3,16 @@ let imgPacUp;
 let imgPacLeft;
 let imgPacRight;
 let imgPacDown;
+let imgFood;
 let pacman;
 let game = new Game();
 let arrayRoca = [];
+let arrayFood = [];
 
 
 function preload() {
     imgRoca = loadImage('img/roca.png');
+    imgFood = loadImage('img/food.png');
     imgPacUp = loadImage('img/pacUp.png');
     imgPacLeft = loadImage('img/pacLeft.png');
     imgPacRight = loadImage('img/pacRight.png');
@@ -26,13 +29,22 @@ function setup() {
             }
         }
     }
-    console.log(arrayRoca);
+    for(c=0; c < game.gameCol; c++) {
+        for(r=0; r < game.gameRows; r++) {
+            if (game.map[c][r] == 2) {
+                arrayFood.push(new Food(game.sizeImg*r,game.sizeImg*c));
+            }
+        }
+    }
 }
 
 function draw() {
     background(100);
     for(i=0; i < arrayRoca.length;i++){
         arrayRoca[i].show();
+    }
+    for(i=0; i < arrayFood.length;i++){
+        arrayFood[i].show();
     }
     if(pacman.direction === 1){
         pacman.show(imgPacUp);
