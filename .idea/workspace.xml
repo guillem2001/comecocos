@@ -25,13 +25,9 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="19479cab-d06c-4893-ac65-abd80991f40d" name="Default Changelist" comment="FEM EL CODI PER A QUE EL PACMAN NO PUGUI SORTIR DEL MAPA">
-      <change afterPath="$PROJECT_DIR$/img/food.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/food.js" afterDir="false" />
+    <list default="true" id="19479cab-d06c-4893-ac65-abd80991f40d" name="Default Changelist" comment="afegim el menjar del pacman">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/game.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/game.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/sketch.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/sketch.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/pacman.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/pacman.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,6 +66,17 @@
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="JsBowerSettings">
+    <node-interpreter value="project" />
+    <bower-package value="" />
+    <bower.json value="" />
+  </component>
+  <component name="JsFlowSettings">
+    <service-enabled>true</service-enabled>
+    <exe-path />
+    <other-services-enabled>true</other-services-enabled>
+    <auto-save>true</auto-save>
+  </component>
   <component name="ProjectId" id="1l9Z4Dn47HHqOo892Ex1IaOkZxk" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -84,6 +91,13 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.standard" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.standard" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.standard" value="" />
+    <property name="settings.editor.selected.configurable" value="Settings.JavaScript.Bower" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
@@ -123,7 +137,8 @@
       <workItem from="1611065260104" duration="632000" />
       <workItem from="1611237965153" duration="6843000" />
       <workItem from="1611331424533" duration="4000" />
-      <workItem from="1611761876910" duration="464000" />
+      <workItem from="1611761876910" duration="1226000" />
+      <workItem from="1612450703356" duration="5417000" />
     </task>
     <task id="LOCAL-00001" summary="Afegim la part de la informació del sistema">
       <created>1607012819880</created>
@@ -174,7 +189,14 @@
       <option name="project" value="LOCAL" />
       <updated>1611247147965</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="afegim el menjar del pacman">
+      <created>1611762504538</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1611762504538</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -213,7 +235,8 @@
     <MESSAGE value="creem la funcio per mostrar les roques en funcio del mapa" />
     <MESSAGE value="afegim el pacman per a que es pugui moure per el mapa" />
     <MESSAGE value="FEM EL CODI PER A QUE EL PACMAN NO PUGUI SORTIR DEL MAPA" />
-    <option name="LAST_COMMIT_MESSAGE" value="FEM EL CODI PER A QUE EL PACMAN NO PUGUI SORTIR DEL MAPA" />
+    <MESSAGE value="afegim el menjar del pacman" />
+    <option name="LAST_COMMIT_MESSAGE" value="afegim el menjar del pacman" />
   </component>
   <component name="WindowStateProjectService">
     <state x="638" y="176" width="700" height="752" key="#PHP" timestamp="1607011083232">
@@ -232,6 +255,10 @@
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
     <state x="765" y="296" width="447" height="513" key="FileChooserDialogImpl/67.27.1853.1053@67.27.1853.1053" timestamp="1611065963346" />
+    <state x="482" y="187" key="SettingsEditor" timestamp="1612453757301">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state x="482" y="187" key="SettingsEditor/67.27.1853.1053@67.27.1853.1053" timestamp="1612453757301" />
     <state x="588" y="288" width="800" height="528" key="Vcs.Push.Dialog.v2" timestamp="1610642032590">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
