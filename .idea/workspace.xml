@@ -25,10 +25,10 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="19479cab-d06c-4893-ac65-abd80991f40d" name="Default Changelist" comment="afegim que el pacman es coqui amb les roces i es menji el menjar">
+    <list default="true" id="19479cab-d06c-4893-ac65-abd80991f40d" name="Default Changelist" comment="afegim la teletransportacio dels costats, rediseny del mapa i afegim tot el menjar">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/game.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/game.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/js/pacman.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/pacman.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/sketch.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/sketch.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -140,7 +140,7 @@
       <workItem from="1611331424533" duration="4000" />
       <workItem from="1611761876910" duration="1226000" />
       <workItem from="1612450703356" duration="5454000" />
-      <workItem from="1613052509963" duration="2657000" />
+      <workItem from="1613052509963" duration="8253000" />
     </task>
     <task id="LOCAL-00001" summary="Afegim la part de la informació del sistema">
       <created>1607012819880</created>
@@ -205,7 +205,14 @@
       <option name="project" value="LOCAL" />
       <updated>1612457027330</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="afegim la teletransportacio dels costats, rediseny del mapa i afegim tot el menjar">
+      <created>1613055368691</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1613055368691</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -246,7 +253,8 @@
     <MESSAGE value="FEM EL CODI PER A QUE EL PACMAN NO PUGUI SORTIR DEL MAPA" />
     <MESSAGE value="afegim el menjar del pacman" />
     <MESSAGE value="afegim que el pacman es coqui amb les roces i es menji el menjar" />
-    <option name="LAST_COMMIT_MESSAGE" value="afegim que el pacman es coqui amb les roces i es menji el menjar" />
+    <MESSAGE value="afegim la teletransportacio dels costats, rediseny del mapa i afegim tot el menjar" />
+    <option name="LAST_COMMIT_MESSAGE" value="afegim la teletransportacio dels costats, rediseny del mapa i afegim tot el menjar" />
   </component>
   <component name="WindowStateProjectService">
     <state x="638" y="176" width="700" height="752" key="#PHP" timestamp="1607011083232">
@@ -277,5 +285,17 @@
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
     <state x="656" y="257" width="672" height="678" key="search.everywhere.popup/67.27.1853.1053@67.27.1853.1053" timestamp="1611243513034" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/js/pacman.js</url>
+          <line>3</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

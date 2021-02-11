@@ -10,8 +10,9 @@ class Pacman extends Gameobject {
     constructor(x,y) {
         super(x,y);
         this.vides = 3;
-        this.direction = 1;
+        this.direction = 4;
         this.speed = 0;
+        this.score = 0;
     }
 
     /*
@@ -76,6 +77,7 @@ class Pacman extends Gameobject {
             if(distanceFoodPacman < 32){
                 food = true;
                 arrayFood = arrayFood.filter(item => item !== arrayFood[i]);
+                this.score += 10;
             }
         }
         return rock;

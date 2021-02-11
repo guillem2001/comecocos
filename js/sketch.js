@@ -8,6 +8,7 @@ let pacman;
 let game = new Game();
 let arrayRoca = [];
 let arrayFood = [];
+let timer = 10;
 
 
 function preload() {
@@ -20,19 +21,20 @@ function preload() {
 }
 
 function setup() {
-    createCanvas(game.gameRows * game.sizeImg, game.gameCol * game.sizeImg);
-    pacman = new Pacman(7*game.sizeImg, 7*game.sizeImg);
+    createCanvas(game.gameRows * game.sizeImg, game.gameCol * game.sizeImg + game.sizeImg);
+    textSize(16);
+    pacman = new Pacman(3*game.sizeImg, 11*game.sizeImg);
     for(c=0; c < game.gameCol; c++) {
         for(r=0; r < game.gameRows; r++) {
             if (game.map[c][r] == 1) {
-                arrayRoca.push(new Rock(game.sizeImg*r,game.sizeImg*c));
+                arrayRoca.push(new Rock(game.sizeImg*r,game.sizeImg*c+32));
             }
         }
     }
     for(c=0; c < game.gameCol; c++) {
         for(r=0; r < game.gameRows; r++) {
             if (game.map[c][r] == 2) {
-                arrayFood.push(new Food(game.sizeImg*r,game.sizeImg*c));
+                arrayFood.push(new Food(game.sizeImg*r,game.sizeImg*c+32));
             }
         }
     }
@@ -40,21 +42,35 @@ function setup() {
 
 function draw() {
     background(100);
-    for(i=0; i < arrayRoca.length;i++){
-        arrayRoca[i].show();
+    textAlign(CENTER, CENTER);
+    textSize(23);
+
+    if (frameCount % 60 == 0 && timer > 0) {
+        timer --;
     }
-    for(i=0; i < arrayFood.length;i++){
-        arrayFood[i].show();
+    if(timer != 0){
+        text("Time:"+timer, 50, 20);
+        text("Score:"+pacman.score, 150, 20);
+        text("Lives:"+pacman.vides, 250, 20);
+        for(i=0; i < arrayRoca.length;i++){
+            arrayRoca[i].show();
+        }
+        for(i=0; i < arrayFood.length;i++){
+            arrayFood[i].show();
+        }
+        if(pacman.direction === 1){
+            pacman.show(imgPacUp);
+        }else if(pacman.direction === 2){
+            pacman.show(imgPacDown);
+        }else if(pacman.direction === 3){
+            pacman.show(imgPacLeft);
+        }else if(pacman.direction === 4){
+            pacman.show(imgPacRight);
+        }
+    }else{
+        text("GAME OVER", width/2, height*0.7);
     }
-    if(pacman.direction === 1){
-        pacman.show(imgPacUp);
-    }else if(pacman.direction === 2){
-        pacman.show(imgPacDown);
-    }else if(pacman.direction === 3){
-        pacman.show(imgPacLeft);
-    }else if(pacman.direction === 4){
-        pacman.show(imgPacRight);
-    }
+
 }
 
 function keyPressed() {
