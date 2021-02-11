@@ -45,6 +45,9 @@ class Pacman extends Gameobject {
     moveLeft(){
         if((this.coordX-this.SPEED)>=this.MAX_LEFT && this.testCollide(this.coordX-this.SPEED, this.coordY) === false){
             this.coordX = this.coordX - this.SPEED;
+        }else if(this.testCollide(this.coordX-this.SPEED, this.coordY) === false && (this.coordX-this.SPEED)<this.MAX_LEFT){
+            this.coordX = this.MAX_RIGHT - this.SPEED;
+            console.log("hola");
         }
         this.direction = 3;
     }
@@ -52,8 +55,8 @@ class Pacman extends Gameobject {
     moveRight(){
         if((this.coordX+this.SPEED)<this.MAX_RIGHT && this.testCollide(this.coordX+this.SPEED, this.coordY) === false){
             this.coordX = this.coordX + this.SPEED;
-        }else if(this.testCollide(this.coordX+this.SPEED, this.coordY) === true){
-            console.log("hola");
+        }else if(this.testCollide(this.coordX+this.SPEED, this.coordY) === false && (this.coordX+this.SPEED)===this.MAX_RIGHT){
+            this.coordX = 0;
         }
         this.direction = 4;
     }
