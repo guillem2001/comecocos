@@ -10,7 +10,7 @@ let game = new Game();
 let arrayRoca = [];
 let arrayFood = [];
 let timer = 120;
-
+let canvas;
 
 function preload() {
     imgRoca = loadImage('img/roca.png');
@@ -23,7 +23,7 @@ function preload() {
 }
 
 function setup() {
-    let canvas = createCanvas(game.gameRows * game.sizeImg, game.gameCol * game.sizeImg + game.sizeImg);
+    canvas = createCanvas(game.gameRows * game.sizeImg, game.gameCol * game.sizeImg + game.sizeImg);
     canvas.parent('canvas');
     textSize(16);
     pacman = new Pacman(3*game.sizeImg, 11*game.sizeImg);
@@ -41,6 +41,9 @@ function setup() {
             }
         }
     }
+    let button = createButton("reset Game");
+    button.parent('canvas');
+    button.mousePressed(resetGame);
 }
 
 function draw() {
@@ -86,6 +89,26 @@ function draw() {
 
 }
 
+function resetGame(){
+    timer = 120;
+    for(c=0; c < game.gameCol; c++) {
+        for(r=0; r < game.gameRows; r++) {
+            if (game.map[c][r] == 1) {
+                arrayRoca.push(new Rock(game.sizeImg*r,game.sizeImg*c+32));
+            }
+        }
+    }
+    for(c=0; c < game.gameCol; c++) {
+        for(r=0; r < game.gameRows; r++) {
+            if (game.map[c][r] == 2) {
+                arrayFood.push(new Food(game.sizeImg*r,game.sizeImg*c+32));
+            }
+        }
+    }
+    pacman.coordY = 11*game.sizeImg;
+    pacman.coordX = 3*game.sizeImg;
+    pacman.direction = 4;
+}
 function keyPressed() {
     if (keyCode === UP_ARROW) {
         pacman.moveUpper();

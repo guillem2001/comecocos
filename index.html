@@ -22,11 +22,45 @@
 
 </head>
 <style>
-    #defaultCanvas0{
+    #canvas{
         margin-left: 300px;
+    }
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #333;
+    }
+
+    li {
+        float: left;
+    }
+
+    li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+
+    /* Change the link color to #111 (black) on hover */
+    li a:hover {
+        background-color: #111;
+    }
+    .active{
+        background-color: green;
     }
 </style>
 <body>
-    <div id="canvas"></div>
+    <ul>
+        <li><a class="active">Inici</a></li>
+        <li><a href="instruccions.html">Instruccions</a></li>
+        <li><a href="conf.html">Configuracio</a></li>
+        <li><a href="informacio.html">Informacio</a></li>
+        <li><a href="credits.html">Credits</a></li>
+    </ul>
+<div id="canvas"></div>
 </body>
 </html>
