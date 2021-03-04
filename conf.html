@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Configuracio</title>
+</head>
+<style>
+    #canvas{
+        margin-left: 300px;
+    }
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #333;
+    }
+
+    li {
+        float: left;
+    }
+
+    li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+
+    /* Change the link color to #111 (black) on hover */
+    li a:hover {
+        background-color: #111;
+    }
+    .active{
+        background-color: green;
+    }
+</style>
+<body>
+    <ul>
+        <li><a href="index.html">Inici</a></li>
+        <li><a href="instruccions.html">Instruccions</a></li>
+        <li><a class="active">Configuracio</a></li>
+        <li><a href="informacio.html">Informacio</a></li>
+        <li><a href="credits.html">Credits</a></li>
+    </ul>
+    <br>
+    <form style="width: 400px;">
+        User :<input type="text" id="user" style="float: right"><br><br>
+        Email :<input type="email" id="email" style="float: right"><br><br>
+        Mode :  <select id="mode" name="mode" style="float: right">
+        <option value="1">Facil</option>
+        <option value="2">Intermitg</option>
+        <option value="3">Difícil</option>
+        </select><br><br>
+        <button type="submit" onclick="dades()">Guardar</button>
+    </form>
+    <script>
+        var x = localStorage.getItem('user');
+        var y = localStorage.getItem('email');
+        if(x != null && y != null){
+            var user = document.getElementById("user");
+            var email = document.getElementById("email");
+            user.value=x;
+            email.value=y;
+        }
+        function dades(){
+            let user = document.getElementById("user");
+            let email = document.getElementById("email");
+            let mode = document.getElementById("mode");
+            if(user != null && email != null && mode != null){
+                localStorage.setItem('user', user.value);
+                localStorage.setItem('email', email.value);
+                localStorage.setItem('mode', mode.value);
+            }
+        }
+    </script>
+</body>
+</html>

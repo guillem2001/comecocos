@@ -13,6 +13,7 @@
     <script src="js/game.js"></script>
     <script src="js/rock.js"></script>
     <script src="js/food.js"></script>
+    <script src="js/ghost.js"></script>
     <script src="js/pacman.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
     <script src="js/p5/p5.js"></script>
@@ -20,17 +21,59 @@
     <script src="js/sketch.js"></script>
 
 </head>
+<style>
+    body{
+        background-image: url("img/765409.jpg");
+    }
+    #canvas{
+        width:800px; margin:0 auto;
+        margin-top: 30px;
+    }
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #333;
+    }
+
+    li {
+        float: left;
+    }
+
+    li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+
+    /* Change the link color to #111 (black) on hover */
+    li a:hover {
+        background-color: #111;
+    }
+    .active{
+        background-color: green;
+    }
+</style>
 <body>
-
-
-
-<div id=""myContanier">
-</div>
-
-
-<div id=""myContanier2">
-</div>
-
-
+    <ul>
+        <li><a class="active">Inici</a></li>
+        <li><a href="instruccions.html">Instruccions</a></li>
+        <li><a href="conf.html">Configuracio</a></li>
+        <li><a href="informacio.html">Informacio</a></li>
+        <li><a href="credits.html">Credits</a></li>
+    </ul>
+    <script>
+        let user = localStorage.getItem("user");
+        let email = localStorage.getItem("email");
+        let difi = localStorage.getItem("mode");
+        if(user != null && email != null && difi != null){
+            document.write("<div id=\"canvas\"></div>");
+        }else{
+            document.write("<h1 style='color: white'>Per a jugar tens que configurar l'usuari</h1><br><a href='conf.html'><button>Anar a la configuració</button></a>");
+        }
+    </script>
 </body>
 </html>
