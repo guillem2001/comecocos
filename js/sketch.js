@@ -9,7 +9,16 @@ let pacman;
 let game = new Game();
 let arrayRoca = [];
 let arrayFood = [];
-let timer = 120;
+let timer = 0;
+let win = false;
+let mode = localStorage.getItem("mode");
+if(mode === "3"){
+    timer = 20;
+}else if (mode === "2"){
+    timer = 50;
+}else if(mode === "1"){
+    timer = 80;
+}
 let canvas;
 
 function preload() {
@@ -27,17 +36,19 @@ function setup() {
     canvas.parent('canvas');
     textSize(16);
     pacman = new Pacman(3*game.sizeImg, 11*game.sizeImg);
-    for(c=0; c < game.gameCol; c++) {
-        for(r=0; r < game.gameRows; r++) {
+    let c;
+    let r;
+    for(c = 0; c < game.gameCol; c++) {
+        for(r = 0; r < game.gameRows; r++) {
             if (game.map[c][r] == 1) {
                 arrayRoca.push(new Rock(game.sizeImg*r,game.sizeImg*c+32));
             }
         }
     }
-    for(c=0; c < game.gameCol; c++) {
-        for(r=0; r < game.gameRows; r++) {
+    for(c = 0; c < game.gameCol; c++) {
+        for (r = 0; r < game.gameRows; r++) {
             if (game.map[c][r] == 2) {
-                arrayFood.push(new Food(game.sizeImg*r,game.sizeImg*c+32));
+                arrayFood.push(new Food(game.sizeImg * r, game.sizeImg * c + 32));
             }
         }
     }
@@ -54,52 +65,62 @@ function draw() {
     if (frameCount % 60 == 0 && timer > 0) {
         timer --;
     }
-    if(timer != 0){
-        if(arrayFood.length != 0){
-            text("Time:"+timer, 50, 20);
-            text("Score:"+pacman.score, 150, 20);
-            text("Lives:"+pacman.vides, 250, 20);
-            for(i=0; i < arrayRoca.length;i++){
-                arrayRoca[i].show();
+    if(win === false) {
+        if (timer != 0) {
+            if (arrayFood.length != 0) {
+                let i;
+                text("Time: " + timer, 50, 20);
+                text("Score: " + pacman.score, 200, 20);
+                text("Lives: " + pacman.vides, 350, 20);
+                text("User: " + localStorage.getItem("user"), 500, 20);
+                for (i = 0; i < arrayRoca.length; i++) {
+                    arrayRoca[i].show();
+                }
+                for (i = 0; i < arrayFood.length; i++) {
+                    arrayFood[i].show();
+                }
+                let ghost = new Ghost(game.sizeImg * 11, game.sizeImg * 8 + 32);
+                let ghost2 = new Ghost(game.sizeImg * 12, game.sizeImg * 8 + 32);
+                let ghost3 = new Ghost(game.sizeImg * 10, game.sizeImg * 8 + 32);
+                ghost.show();
+                ghost2.show();
+                ghost3.show();
+                if (pacman.direction === 1) {
+                    pacman.show(imgPacUp);
+                } else if (pacman.direction === 2) {
+                    pacman.show(imgPacDown);
+                } else if (pacman.direction === 3) {
+                    pacman.show(imgPacLeft);
+                } else if (pacman.direction === 4) {
+                    pacman.show(imgPacRight);
+                }
+            } else {
+                win = true;
             }
-            for(i=0; i < arrayFood.length;i++){
-                arrayFood[i].show();
-            }
-            let ghost = new Ghost(game.sizeImg*11,game.sizeImg*8+32);
-            let ghost2 = new Ghost(game.sizeImg*12,game.sizeImg*8+32);
-            let ghost3 = new Ghost(game.sizeImg*10,game.sizeImg*8+32);
-            ghost.show();
-            ghost2.show();
-            ghost3.show();
-            if(pacman.direction === 1){
-                pacman.show(imgPacUp);
-            }else if(pacman.direction === 2){
-                pacman.show(imgPacDown);
-            }else if(pacman.direction === 3){
-                pacman.show(imgPacLeft);
-            }else if(pacman.direction === 4){
-                pacman.show(imgPacRight);
-            }
-        }else{
-            text("WIN", width/2, height*0.7);
+        } else {
+            text("GAME OVER", width / 2, height * 0.5);
+            text("Has fet un Score de:" + pacman.score, width / 2, height * 0.6);
+            arrayFood = [];
         }
     }else{
-        text("GAME OVER", width/2, height*0.7);
+        text("WIN", width / 2, height * 0.5);
     }
-
 }
 
 function resetGame(){
-    timer = 120;
-    for(c=0; c < game.gameCol; c++) {
-        for(r=0; r < game.gameRows; r++) {
-            if (game.map[c][r] == 1) {
-                arrayRoca.push(new Rock(game.sizeImg*r,game.sizeImg*c+32));
-            }
-        }
+    let c;
+    let r;
+    win = false;
+    if(mode === "3"){
+        timer = 20;
+    }else if (mode === "2"){
+        timer = 50;
+    }else if(mode === "1"){
+        timer = 80;
     }
-    for(c=0; c < game.gameCol; c++) {
-        for(r=0; r < game.gameRows; r++) {
+    arrayFood = [];
+    for(c = 0; c < game.gameCol; c++) {
+        for(r = 0; r < game.gameRows; r++) {
             if (game.map[c][r] == 2) {
                 arrayFood.push(new Food(game.sizeImg*r,game.sizeImg*c+32));
             }
@@ -109,6 +130,7 @@ function resetGame(){
     pacman.coordX = 3*game.sizeImg;
     pacman.direction = 4;
 }
+
 function keyPressed() {
     if (keyCode === UP_ARROW) {
         pacman.moveUpper();

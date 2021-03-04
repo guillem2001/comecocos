@@ -26,8 +26,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="19479cab-d06c-4893-ac65-abd80991f40d" name="Default Changelist" comment="afegim menu en l'inici i començem els diversos apartats de la pagina">
+      <change afterPath="$PROJECT_DIR$/img/765409.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/back.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/images.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/pac.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/conf.html" beforeDir="false" afterPath="$PROJECT_DIR$/conf.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/credits.html" beforeDir="false" afterPath="$PROJECT_DIR$/credits.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/informacio.html" beforeDir="false" afterPath="$PROJECT_DIR$/informacio.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/instruccions.html" beforeDir="false" afterPath="$PROJECT_DIR$/instruccions.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/sketch.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/sketch.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -91,14 +100,14 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../gestio" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.path.for.package.standard" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.standard" value="" />
-    <property name="settings.editor.selected.configurable" value="Settings.JavaScript.Bower" />
+    <property name="settings.editor.selected.configurable" value="Settings.JavaScript" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
@@ -109,7 +118,7 @@
       <recent name="$PROJECT_DIR$/img" />
     </key>
   </component>
-  <component name="RunManager" selected="JavaScript Debug.informacio.html">
+  <component name="RunManager" selected="JavaScript Debug.index.html">
     <configuration name="conf.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/comecocos/conf.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
@@ -121,9 +130,9 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JavaScript Debug.informacio.html" />
-        <item itemvalue="JavaScript Debug.conf.html" />
         <item itemvalue="JavaScript Debug.index.html" />
+        <item itemvalue="JavaScript Debug.conf.html" />
+        <item itemvalue="JavaScript Debug.informacio.html" />
       </list>
     </recent_temporary>
   </component>
@@ -151,6 +160,9 @@
       <workItem from="1613052509963" duration="8253000" />
       <workItem from="1613659538980" duration="595000" />
       <workItem from="1613660425992" duration="6169000" />
+      <workItem from="1613752349785" duration="46000" />
+      <workItem from="1614694523571" duration="30000" />
+      <workItem from="1614868169240" duration="7036000" />
     </task>
     <task id="LOCAL-00001" summary="Afegim la part de la informació del sistema">
       <created>1607012819880</created>
@@ -295,14 +307,18 @@
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
     <state x="726" y="301" width="524" height="502" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/67.27.1853.1053@67.27.1853.1053" timestamp="1608220470702" />
-    <state x="765" y="296" width="447" height="513" key="FileChooserDialogImpl" timestamp="1611065963346">
+    <state x="765" y="296" width="447" height="513" key="FileChooserDialogImpl" timestamp="1614694551371">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state x="765" y="296" width="447" height="513" key="FileChooserDialogImpl/67.27.1853.1053@67.27.1853.1053" timestamp="1611065963346" />
-    <state x="482" y="187" key="SettingsEditor" timestamp="1612453757301">
+    <state x="765" y="296" width="447" height="513" key="FileChooserDialogImpl/67.27.1853.1053@67.27.1853.1053" timestamp="1614694551371" />
+    <state x="482" y="187" key="SettingsEditor" timestamp="1614872640952">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state x="482" y="187" key="SettingsEditor/67.27.1853.1053@67.27.1853.1053" timestamp="1612453757301" />
+    <state x="482" y="187" key="SettingsEditor/67.27.1853.1053@67.27.1853.1053" timestamp="1614872640952" />
+    <state width="498" height="446" key="SwitcherDM" timestamp="1614872872362">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state width="498" height="446" key="SwitcherDM/67.27.1853.1053@67.27.1853.1053" timestamp="1614872872362" />
     <state x="588" y="288" width="800" height="528" key="Vcs.Push.Dialog.v2" timestamp="1610642032590">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>

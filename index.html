@@ -22,8 +22,12 @@
 
 </head>
 <style>
+    body{
+        background-image: url("img/765409.jpg");
+    }
     #canvas{
-        margin-left: 300px;
+        width:800px; margin:0 auto;
+        margin-top: 30px;
     }
     ul {
         list-style-type: none;
@@ -61,6 +65,15 @@
         <li><a href="informacio.html">Informacio</a></li>
         <li><a href="credits.html">Credits</a></li>
     </ul>
-<div id="canvas"></div>
+    <script>
+        let user = localStorage.getItem("user");
+        let email = localStorage.getItem("email");
+        let difi = localStorage.getItem("mode");
+        if(user != null && email != null && difi != null){
+            document.write("<div id=\"canvas\"></div>");
+        }else{
+            document.write("<h1 style='color: white'>Per a jugar tens que configurar l'usuari</h1><br><a href='conf.html'><button>Anar a la configuració</button></a>");
+        }
+    </script>
 </body>
 </html>
